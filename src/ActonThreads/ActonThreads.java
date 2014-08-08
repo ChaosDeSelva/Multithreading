@@ -93,7 +93,7 @@ class MyRunnable implements Runnable {
         }
 
         //Loop to generate the thread content
-        for ( int i = 1; i < generatorCount.get(index); i++ ){ 
+        for ( int i = 1; i <= generatorCount.get(index); i++ ){ 
             try {
                 //Delay the thread between content generation
                 Thread.sleep(generatorDelay.get(index));
